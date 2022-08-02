@@ -4,14 +4,14 @@ const app = express();
 
 app.get('/HOMEPAGE', (req, res)=>{
     console.log('LOJA DE CARROS');
-    res.send('EM DESENVOLVIMENTO✔️');
+    res.send('EM ANDAMENTO🚗');
 
 })
 
 app.get('/LOJA', (req, res)=>{
 
     console.log('LOJA DE CARROS');
-    res.send('EM DESENVOLVIMENTO✔️');
+    res.send('EM ANDAMENTO🚓');
 
 
 })
