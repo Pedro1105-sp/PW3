@@ -1,0 +1,21 @@
+{
+  "name": "apicars",
+  "version": "1.0.0",
+  "description": "APIREST DE GESTÃO DE VEICULOS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PW3",
+    "NODE.JS",
+    "ETEC",
+    "BARUERI",
+    "3°DS"
+  ],
+  "author": "PEDRO HENRIQUE ALVES",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
