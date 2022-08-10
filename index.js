@@ -1,20 +1,15 @@
 const express = require('express');
 
+const categoriaController = require("./controller/CategoriaController");
+
 const app = express();
 
-app.get('/HOMEPAGE', (req, res)=>{
-    console.log('LOJA DE CARROS');
-    res.send('EM ANDAMENTO🚗');
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 
-})
-
-app.get('/LOJA', (req, res)=>{
-
-    console.log('LOJA DE CARROS');
-    res.send('EM ANDAMENTO🚓');
-
-
-})
+/* ROTAS DE CATEGORIAS DE CARROS */
+console.log("A REQUISIÇÃO PASSOU PELA INDEX");
+app.use("/", categoriaController);
 
 app.listen(3000, ()=>{
     console.log('SERVIDOR RODANDO EM: http://localhost:3000');
